@@ -84,3 +84,9 @@ const userTotalFriendCount = (db: Database) => {
     ])
     .groupBy('friendships.userId')
 }
+
+const userMutualFriendCount = (db: Database) => {
+  return db.selectFrom('friendships')
+    .where('friendships.status', '=', FriendshipStatusSchema.Values['accepted'])
+    
+}
