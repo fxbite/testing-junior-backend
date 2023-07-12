@@ -11,8 +11,7 @@
     "test:watch": "vitest watch",
     "db:push": "prisma db push",
     "db:generate": "prisma generate",
-    "type-check": "tsc --noEmit",
-    "format": "prettier --write \"src/server/api/routers/friendship-request-router.ts\" "
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@prisma/client": "4.14.0",
